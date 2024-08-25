@@ -45,7 +45,7 @@ func main() {
 
 	http.HandleFunc("/", serveIndex)
 	http.HandleFunc("/sadhaka", serveSadhaka)
-	http.ListenAndServe(":8080", nil)
+	http.ListenAndServe(":3000", nil)
 }
 
 func serveIndex(w http.ResponseWriter, r *http.Request) {
